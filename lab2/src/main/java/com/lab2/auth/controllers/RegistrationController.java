@@ -15,6 +15,10 @@ public class RegistrationController {
 
     @PostMapping(value="/registrationProcess")
     public String addUser(@ModelAttribute("user") User user, ModelMap model){
+        if (user.getPassword().isEmpty() || user.getUsername().isEmpty())
+            return "registration";
+        if (userService.findByUsername(user.getUsername()) != null)
+            return "registration";
         userService.addUser(user);
         model.addAttribute("username", user.getUsername());
 

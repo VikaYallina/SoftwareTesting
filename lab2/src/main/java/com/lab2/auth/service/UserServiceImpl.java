@@ -6,6 +6,8 @@ import com.lab2.auth.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class UserServiceImpl implements UserService{
     @Autowired
@@ -16,10 +18,15 @@ public class UserServiceImpl implements UserService{
     }
 
     public User validateUser(Login login) {
-        return userRepo.findById(login.getUsername()).get();
+        Optional<User> user = userRepo.findById(login.getUsername());
+        if (user.isPresent() && login.getPassword().equals(user.get().getPassword()))
+            return user.get();
+        else return null;
+
     }
 
-    public User findByUsername(String username) {
-        return userRepo.findByUsername(username);
+    public User findByUsername(String name){
+        Optional<User> user = userRepo.findById(name);
+        return user.orElse(null);
     }
 }

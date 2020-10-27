@@ -10,5 +10,5 @@ public interface UserService {
 
     User validateUser(Login login);
 
-    User findByUsername(String username);
+    User findByUsername(String name);
 }

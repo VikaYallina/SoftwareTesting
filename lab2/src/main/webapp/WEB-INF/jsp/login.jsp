@@ -30,9 +30,7 @@
             <tr></tr>
             <tr>
                 <td></td>
-                <td>
-                    <a href="home.jsp">Home</a>
-                </td>
+                <td><a href="showRegistrationPage">Register</a></td>
             </tr>
         </table>
     </form:form>
@@ -40,6 +38,7 @@
         <tr>
             <td style="font-style: italic; color: red;">${message}</td>
         </tr>
+
     </table>
 </body>
 </html>

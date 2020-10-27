@@ -26,27 +26,6 @@
             <td><form:password path="password" name="password" id="password" /></td>
             <td><form:errors path="password" /></td>
         </tr>
-<%--        <tr>--%>
-<%--            <td><form:label path="firstname">FirstName</form:label></td>--%>
-<%--            <td><form:input path="firstname" name="firstname" id="firstname" /></td>--%>
-<%--        </tr>--%>
-<%--        <tr>--%>
-<%--            <td><form:label path="lastname">LastName</form:label></td>--%>
-<%--            <td><form:input path="lastname" name="lastname" id="lastname" /></td>--%>
-<%--        </tr>--%>
-<%--        <tr>--%>
-<%--            <td><form:label path="email">Email</form:label></td>--%>
-<%--            <td><form:input path="email" name="email" id="email" /></td>--%>
-<%--        </tr>--%>
-<%--        <tr>--%>
-<%--            <td><form:label path="address">Address</form:label></td>--%>
-<%--            <td><form:input path="address" name="address" id="address" /></td>--%>
-<%--        </tr>--%>
-<%--        <tr>--%>
-<%--            <td><form:label path="phone">Phone</form:label></td>--%>
-<%--            <td><form:input path="phone" name="phone" id="phone" /></td>--%>
-<%--        </tr>--%>
-
         <tr>
             <td></td>
             <td><form:button id="register" name="register">Register</form:button></td>
@@ -54,7 +33,7 @@
         <tr></tr>
         <tr>
             <td></td>
-            <td><a href="/">Home</a></td>
+            <td><a href="showLoginPage">Login</a></td>
         </tr>
     </table>
 </form:form>

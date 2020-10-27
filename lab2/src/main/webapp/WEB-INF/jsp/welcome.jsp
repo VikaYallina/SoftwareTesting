@@ -13,5 +13,6 @@
     <title>Welcome</title>
 </head>
 <body>Welcome ${username}
+<a href="showLoginPage">Go back</a>
 </body>
 </html>
